@@ -81,7 +81,7 @@ const Login = () => {
           </Button>
         </form>
         <Typography>
-          ¿Aun no tienes cuenta? <Link to={RoutePaths.LOGIN}>Registrate aqui</Link>
+          ¿Aun no tienes cuenta? <Link to={RoutePaths.REGISTER}>Registrate aqui</Link>
         </Typography>
       </Box>
     </Container>
