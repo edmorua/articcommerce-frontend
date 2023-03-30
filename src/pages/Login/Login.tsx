@@ -3,6 +3,7 @@ import * as yup from 'yup';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import { Container, Box, TextField, Button, Typography, useMediaQuery } from '@mui/material';
+import RoutePaths from '../../utils/RoutePaths';
 
 const validationLoginSchema = yup.object({
   email: yup.string().email('Agrega un correo valido').required('El correo es requerido'),
@@ -80,7 +81,7 @@ const Login = () => {
           </Button>
         </form>
         <Typography>
-          ¿Aun no tienes cuenta? <Link to='/register'>accede aqui</Link>
+          ¿Aun no tienes cuenta? <Link to={RoutePaths.LOGIN}>Registrate aqui</Link>
         </Typography>
       </Box>
     </Container>
